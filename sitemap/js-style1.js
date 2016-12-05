@@ -1,13 +1,11 @@
 /**
- * Advanced Blogger TOC Script by Dharla Ferdana
+ * Advanced Blogger TOC Script
  * URL: http://www.dhf.web.id
- * Templates: &lt;div id="table-outer"&gt;&lt;table border="0"&gt;&lt;tr&gt;&lt;td&gt;&lt;label&gt;Urutkan daftar berdasarkan:&lt;/label&gt;&lt;/td&gt;&lt;td&gt;&lt;select id="orderFeedBy"&gt;&lt;option value="published" selected&gt;Posting Terbaru&lt;/option&gt;&lt;option value="updated"&gt;Posting Diperbaharui&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;label&gt;Filter daftar berdasarkan kategori:&lt;/label&gt;&lt;/td&gt;&lt;td&gt;&lt;span id="labelSorter"&gt;&lt;select disabled&gt;&lt;option selected&gt;Memuat...&lt;/option&gt;&lt;/select&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;label&gt;Cari dengan kata kunci:&lt;/label&gt;&lt;/td&gt;&lt;td&gt;&lt;form id="postSearcher"&gt;&lt;input type="text"/&gt;&lt;/form&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;header id="resultDesc"&gt;&lt;/header&gt;&lt;ul id="feedContainer"&gt;&lt;/ul&gt;&lt;div id="feedNav"&gt;Loading...&lt;/div&gt;&lt;script type="text/javascript" src="advanced-toc.js"&gt;&lt;/script&gt;
  */
 
 document.body.oncontextmenu=function() {return false;}
 
 // This is the container template that will be used to insert post template, pagination and the posts count
-document.write('<div id="itempager" style="position:relative;"><a title="Dharla Ferdana" style="display:block!important;visibility:visible!important;opacity:1!important;position:absolute;bottom:10px;right:35px;font:normal bold 8px Arial,Sans-Serif!important;color:#666;text-shadow:0 1px 0 rgba(255,255,255,.1);text-decoration:none;" href="http://www.tutoriales-blogger.info" target="_blank">&#9658;T-B</a></div>');
 
 function getID(a) {
 	return document.getElementById(a);
