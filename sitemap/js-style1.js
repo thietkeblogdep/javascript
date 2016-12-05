@@ -21,7 +21,7 @@ var head = document.getElementsByTagName('head')[0],
 	nextPage, feedArchive, startPage = 0, filter = 0;
 
 function showLabels(json) {
-	var cat = json.feed.category, skeleton = "<select id='labelSorter' onchange='changeSort(this.value);'><option value='' selected disabled>CATEGORIA...</option>";
+	var cat = json.feed.category, skeleton = "<select id='labelSorter' onchange='changeSort(this.value);'><option value='' selected disabled>Danh mục...</option>";
 	for (var i = 0, cen = cat.length; i < cen; i++) {
 		skeleton += "<option value='" + decodeURIComponent(cat[i].term) + "'>" + cat[i].term.toUpperCase() + "</option>";
 	}
